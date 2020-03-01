@@ -1,0 +1,18 @@
+{
+  "name": "ftapi",
+  "version": "0.1.4",
+  "main": "lib/index.js",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3",
+    "core-js": "2.6.5"
+  },
+  "scripts": {
+    "compile": "npx babel src --out-dir lib"
+  }
+}
