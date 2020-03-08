@@ -1,20 +1,25 @@
 {
   "name": "ftapi",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "main": "lib/index.js",
   "private": false,
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6"
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/polyfill": "^7.8.7",
     "@babel/preset-typescript": "^7.8.3",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
     "babel-preset-es2015": "^6.24.1",
-    "core-js": "2.6.5"
+    "core-js": "2.6.5",
+    "zent": "^8.3.0"
   },
   "scripts": {
-    "compile": "npx babel src --out-dir lib --extensions .ts,.js.tsx"
+    "compile": "npx babel src --out-dir lib --extensions .ts,.js,.tsx,.jsx"
   }
 }
