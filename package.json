@@ -1,18 +1,21 @@
 {
   "name": "ftapi",
-  "version": "0.1.4",
+  "version": "0.2.1",
   "main": "lib/index.js",
+  "types": "./types/index.d.ts",
   "private": false,
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6"
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-typescript": "^7.10.4"
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
     "core-js": "2.6.5"
   },
   "scripts": {
-    "compile": "npx babel src --out-dir lib"
+    "compile": "npx babel src --out-dir lib --extensions .ts,.js",
+    "getds": "npx typescript src/index.js --declaration --allowJs --emitDeclarationOnly --outDir types"
   }
 }
